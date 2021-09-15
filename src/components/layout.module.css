@@ -1,6 +1,7 @@
 .container {
+    padding-top: 5%;
     margin: auto;
-    max-width: 500px;
+    max-width: 33%;
     font-family: sans-serif;
   }
   
