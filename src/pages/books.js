@@ -22,7 +22,7 @@ const IndexPage = () => {
         <h1>Cooking</h1>
         <ul>
             <li><a target="_blank" href="https://www.okta.com/">Salt Fat Acid Heat</a> - Samin Nosrat</li>
-            <li><a target="_blank" href="https://www.okta.com/">Flour Water Salt Year</a> - Ken Forkish </li>
+            <li><a target="_blank" href="https://www.okta.com/">Flour Water Salt Yeast</a> - Ken Forkish </li>
             <li><a target="_blank" href="https://www.okta.com/">Food of Life: Ancient Persian and Modern Iranian Cooking</a> - Najmieh Batmanglij </li>
         </ul>
         
