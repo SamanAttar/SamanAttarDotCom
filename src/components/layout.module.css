@@ -1,8 +1,43 @@
 .container {
     padding-top: 5%;
     margin: auto;
-    max-width: 33%;
+    padding-left: 30%;
+    padding-right: 30%;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding-top: 0px !important;
+    }
+
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .container {
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 20%;
+    }
+    p {
+      font-size: 110% !important;
+    }
+    li {
+      font-family: "Source Serif Pro", serif;
+      font-size:1.0em !important;
+      font-style: normal;
+      line-height: initial;
+      margin: .025em 0;
+    }
+    h1 {
+      padding-top: 5%;
+      font-size: large;
+    }
   }
   
   .heading {
