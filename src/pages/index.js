@@ -1,21 +1,25 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { background } from './index.module.css'
+import Seo from "../components/seo"
+import "@fontsource/varela-round"; 
 
-const IndexPage = () => {
+
+
+const IndexPage = (data) => {
+  const siteTitle = 'Saman Attar';
   return (
-      <Layout className={background}>
+      <Layout className={background} title={siteTitle}>
+        <Seo title="Howdy" />
             
-        <p>Hey! I'm Saman (he/him). I'm a Sofware Engineer at Okta. </p>
+        <p>Howdy! I'm <a target="_blank" href="https://twitter.com/saman__c">Saman</a> (he/him). I cook, bake bread, and build software. </p>
 
-        <p>What do I build? Lately, I've been crushing it with <a target="_blank" href="https://trailblazer.me/id/saman">Salesforce</a>. I've also built apps with Flask, .Net, and AWS. Some of those are on <a target="_blank" href="https://github.com/SamanAttar">Github</a>.</p>
+        <p>I specialize in <a target="_blank" href="https://trailblazer.me/id/saman">Salesforce</a> and write about my developer experience in the <a href="/field-notes-on-salesforce">Field Notes on Salesforce</a> series. </p>
 
-        <p>I've been a Tech Lead at USAA and the president of UT Dallas's <a target="_blank" href="https://www.acmutd.co/">ACM</a> chapter. Whoosh!</p>
+        <p>I'm a Sofware Engineer at Okta. I've also been a Tech Lead at USAA and President of UT Dallas's <a target="_blank" href="https://www.acmutd.co/">ACM</a> chapter. Whoosh!</p>
       
-        <p>For dinner, I prefer to <a target="_blank" href="https://vsco.co/saman-attar/gallery">cook</a>. I've been trying to read more. Here are a few <a href="/books">books</a> that have impacted me.</p> 
-      
-        <p>If you'd like to connect, send a request on <a target="_blank" href="https://www.linkedin.com/in/saman-attar/">LinkedIn</a> or <a target="_blank" href="https://twitter.com/saman__c">Twitter</a>.</p>
-    
+        <p>For dinner, I prefer to <a target="_blank" href="https://vsco.co/saman-attar/gallery">cook</a>. I've been reading more. These <a href="/books">books</a> have made personal and professional impacts on me.</p> 
+        
       </Layout>
   )
 }

@@ -8,15 +8,22 @@ html {
 }
 
 p{
-    font-family: "Source Serif Pro", serif;
-    font-weight: 400;
-    font-size:1.7em;
-    font-style: normal;
+
+    font-family: var(--font-body);
+    font-size: var(--fontSize-1);
+    color: var(--color-text);
+    font-family: 'Varela Round', sans-serif;
+    font-size: var(--fontSize-4);
     line-height: initial;
 }
 
 a {
-    color: #569cd6;
+    /*color: #569cd6;*/
+    color: #ec96dc;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
