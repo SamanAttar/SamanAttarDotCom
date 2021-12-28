@@ -7,7 +7,7 @@ module.exports = {
       name: `Saman Attar`,
       summary: `Howdy`,
     },
-    description: `Thanks for stopping be.`,
+    description: `Thanks for stopping by.`,
     siteUrl: `https://samanattar.com`,
     social: {
       twitter: `saman__c`,
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/field-notes-on-salesforce/`,
-        name: `field-notes-on-salesforce`,
+        path: `${__dirname}/content/blog/`,
+        name: `blog`,
       },
     },
     {
@@ -43,14 +43,6 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: "gatsby-plugin-web-font-loader",
-            options: {
-              typekit: {
-                id: process.env.TYPEKIT_ID,
-              },
             },
           },
           `gatsby-remark-prismjs`,
@@ -89,8 +81,6 @@ module.exports = {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
                 })
               })
@@ -101,7 +91,6 @@ module.exports = {
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   nodes {
-                    excerpt
                     html
                     fields {
                       slug
