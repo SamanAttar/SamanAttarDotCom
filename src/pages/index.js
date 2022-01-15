@@ -16,7 +16,7 @@ const IndexPage = (data) => {
 
         <p>I specialize in <a target="_blank" href="https://trailblazer.me/id/saman">Salesforce</a> and write about my developer experience in the <a href="/field-notes-on-salesforce">Field Notes on Salesforce</a> series. </p>
 
-        <p>I'm a Sofware Engineer at Okta. I've also been a Tech Lead at USAA and President of UT Dallas's <a target="_blank" href="https://www.acmutd.co/">ACM</a> chapter. Whoosh!</p>
+        <p>I'm a Sofware Engineer at Okta. I've also been a Tech Lead at USAA and President of UT Dallas's ACM chapter. Whoosh!</p>
       
         <p>For dinner, I prefer to <a target="_blank" href="https://vsco.co/saman-attar/gallery">cook</a>. I've been reading more. These <a href="/books">books</a> have made personal and professional impacts on me.</p> 
         
