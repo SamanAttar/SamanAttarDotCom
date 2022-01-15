@@ -1,16 +1,17 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
+import { background } from './index.module.css'
 import Seo from "../components/seo"
 
 import "@fontsource/varela-round"; 
 
-const BlogIndex = ({ data, location }) => {
+const FieldNotesIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.nodes
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} class={background} title={siteTitle}>
       <Seo title="Field Notes" />
       <h1>Fields Notes on Salesforce</h1>
       <ol style={{ listStyle: `none` }}>
@@ -48,7 +49,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default FieldNotesIndex
 
 export const pageQuery = graphql`
   query {

@@ -1,0 +1,16 @@
+main {
+    margin: auto;
+    width: 150%;
+    padding-right: 15%;
+}
+
+p {
+  font-size: var(--fontSize-2) !important;
+  line-height: var(--lineHeight-relaxed);
+}
+
+li {
+  margin-left: 5%;
+  font-size: var(--fontSize-2) !important;
+  line-height: var(--lineHeight-relaxed);
+}
