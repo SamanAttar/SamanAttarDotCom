@@ -1,10 +1,13 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { background } from './books.module.css'
+import Seo from "../components/seo"
+
 
 const IndexPage = () => {
   return (
       <Layout className={background}>
+        <Seo title="Books" />
         <h1>Engineering</h1>
         <ul>
             <li><a target="_blank" href="https://www.goodreads.com/book/show/3735293-clean-code">Clean Code</a> - Uncle Bob </li>

@@ -2,22 +2,23 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import { background } from './field-notes-template.module.css'
 import Seo from "../components/seo"
+
 import "@fontsource/varela-round"; 
 
-const BlogPostTemplate = ({ data, location }) => {
+const FieldNotesTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title
-  const { previous, next } = data
 
   return (
-    <Layout location={location} title={siteTitle} >
+    <Layout location={location} class={background} title={siteTitle} >
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className="field-note"
         itemScope
         itemType="http://schema.org/Article"
       >
@@ -27,7 +28,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
+          itemProp="articleBody" 
         />
         <hr />
         <footer>
@@ -37,13 +38,11 @@ const BlogPostTemplate = ({ data, location }) => {
   )
 }
 
-export default BlogPostTemplate
+export default FieldNotesTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+  query FieldNoteBySlug(
     $id: String!
-    $previousPostId: String
-    $nextPostId: String
   ) {
     site {
       siteMetadata {
@@ -52,27 +51,11 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
-
+      html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
-      }
-    }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
       }
     }
   }
