@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from '../components/layout'
 import { background } from './index.module.css'
 import Seo from "../components/seo"
-
+ 
 import "@fontsource/varela-round"; 
 
 const FieldNotesIndex = ({ data, location }) => {

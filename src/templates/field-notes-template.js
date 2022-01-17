@@ -6,13 +6,14 @@ import { background } from './field-notes-template.module.css'
 import Seo from "../components/seo"
 
 import "@fontsource/varela-round"; 
+import FieldNoteLayout from "../components/fieldNoteLayout"
 
 const FieldNotesTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title
 
   return (
-    <Layout location={location} class={background} title={siteTitle} >
+    <FieldNoteLayout location={location} class={background} title={siteTitle} >
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -26,6 +27,8 @@ const FieldNotesTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
+        <footer>
+        </footer>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody" 
@@ -34,7 +37,7 @@ const FieldNotesTemplate = ({ data, location }) => {
         <footer>
         </footer>
       </article>
-    </Layout>
+    </FieldNoteLayout>
   )
 }
 
