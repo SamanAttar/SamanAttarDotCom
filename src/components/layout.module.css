@@ -1,7 +1,7 @@
 .container {
-    padding-top: 5%;
+    padding-top: 10%;
     margin: auto;
-    padding-left: 10%;
+    padding-left: 30%;
     padding-right: 30%;
     font-family: sans-serif;
     display: flex;
@@ -27,13 +27,6 @@
     p {
       font-size: 110% !important;
     }
-    li {
-      font-family: "Source Serif Pro", serif;
-      font-size:1.0em !important;
-      font-style: normal;
-      line-height: initial;
-      margin: .025em 0;
-    }
     h1 {
       padding-top: 5%;
       font-size: large;
@@ -42,22 +35,4 @@
   
   .heading {
     color: rebeccapurple;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .nav-link-item {
-    padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: black;
-  }
-
-  .site-title {
-    font-size: 3rem;
-    color: gray;
-    font-weight: 700;
-    margin: 3rem 0;
   }

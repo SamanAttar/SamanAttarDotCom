@@ -58,7 +58,7 @@
   --color-primary: #b386aa;
   --color-text:#f9f2fb;
   --color-text-light: #e6e6e6;
-  --color-heading: #1a202c;
+  --color-heading: #e6e6e6;
   --color-heading-black:#e6e6e6;
   --color-accent: #e6e6e6;
 }
@@ -292,8 +292,8 @@ a:focus {
   font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
-  
-}
+   
+} 
 
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
@@ -301,6 +301,11 @@ a:focus {
 
 .blog-post header p {
   font-size: var(--fontSize-1);
+  font-family: var(--font-heading);
+}
+
+.blog-post p {
+  font-size: var(--fontSize-0) !important;
   font-family: var(--font-heading);
 }
 
