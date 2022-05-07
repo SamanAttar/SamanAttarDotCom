@@ -5,10 +5,10 @@
 html {
     background-color: #2a2a2a;
     color: #fffef2;
-    
 }
 
 p{
+
     font-family: var(--font-body);
     font-size: var(--fontSize-1);
     color: var(--color-text);

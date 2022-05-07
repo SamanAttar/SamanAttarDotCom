@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
 import { background } from './field-notes-template.module.css'
 import Seo from "../components/seo"
 
