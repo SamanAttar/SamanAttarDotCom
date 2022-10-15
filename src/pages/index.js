@@ -12,7 +12,7 @@ const IndexPage = (data) => {
       <Layout className={background} title={siteTitle}>
         <Seo title="Howdy" />
             
-        <p>Howdy! I'm <a target="_blank" href="https://twitter.com/saman__c">Saman</a> (he/him). I cook, bake bread, and build software. </p>
+        <p>Howdy! I'm <a target="_blank" href="https://twitter.com/SOQL101">Saman</a> (he/him). I cook, bake bread, and build software. </p>
 
         <p>I specialize in <a target="_blank" href="https://trailblazer.me/id/saman">Salesforce</a> and write about my developer experience in the <a href="/field-notes-on-salesforce">Field Notes on Salesforce</a> series. </p>
 
