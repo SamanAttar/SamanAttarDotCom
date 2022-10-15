@@ -18,7 +18,7 @@ const IndexPage = (data) => {
 
         <p>I'm a Sofware Engineer at Okta. I've also been a Tech Lead at USAA and President of UT Dallas's ACM chapter. Whoosh!</p>
       
-        <p>For dinner, I prefer to <a target="_blank" href="https://vsco.co/saman-attar/gallery">cook</a>. I've been reading more. These <a href="/books">books</a> have made personal and professional impacts on me.</p> 
+        <p>For dinner, I prefer to stay in and <a target="_blank" href="https://vsco.co/saman-attar/gallery">cook</a>. I've been trying to read more. These <a href="/books">books</a> have made personal and professional impacts on me.</p> 
         
       </Layout>
   )
