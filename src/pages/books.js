@@ -11,7 +11,7 @@ const IndexPage = () => {
         <h1>Tech</h1>
         <ul>
             <li><a target="_blank" href="https://www.goodreads.com/book/show/48716700-ask-your-developer">Ask Your Developer</a> - Lawson </li>
-            <li><a target="_blank" href="https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer">The Pragmatic Programmere</a> - Hunt & Thomas </li>
+            <li><a target="_blank" href="https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer">The Pragmatic Programmer</a> - Hunt & Thomas </li>
             <li><a target="_blank" href="https://www.goodreads.com/book/show/3735293-clean-code">Clean Code</a> - Martin </li>
 
         </ul>
