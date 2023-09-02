@@ -12,7 +12,7 @@ const IndexPage = (data) => {
 
       <p>
         Howdy! I'm{" "}
-        <a target="_blank" href="https://twitter.com/SOQL101" rel="noreferrer">
+        <a target="_blank" href="https://www.linkedin.com/in/saman-attar/" rel="noreferrer">
           Saman
         </a>{" "}
         (he/him). I cook, bake bread, and build software.{" "}
@@ -35,7 +35,7 @@ const IndexPage = (data) => {
       </p>
 
       <p>
-        I'm a Sofware Engineer at Okta. I've also been a Tech Lead at USAA and
+        I'm a Senior Sofware Engineer at Okta. I've also been a technical lead at USAA and
         President of UT Dallas's ACM chapter. Whoosh!
       </p>
 
@@ -48,8 +48,7 @@ const IndexPage = (data) => {
         >
           cook
         </a>
-        . I've been trying to read more. These <a href="/books">books</a> have
-        made personal and professional impacts on me.
+        . I've been making an effort to read more, and these <a href="/books">books</a> have had both personal and professional impacts on me.
       </p>
     </Layout>
   );
